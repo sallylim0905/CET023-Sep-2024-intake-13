@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Singapore Dollar to US Dollar Converter</h1>
+    <form method="post">
+        <label for="amount">Amount in SGD:</label>
+        <input type="text" id="amount" name="amount" required>
+        <button type="submit">Convert</button>
+    </form>
+
+    {% if result is not none %}
+        <h2>Converted Amount: USD {{ result }}</h2>
+    {% endif %}
+
+    {% if error %}
+        <h2 style="color:red;">{{ error }}</h2>
+    {% endif %}
+</body>
+</html>
+
