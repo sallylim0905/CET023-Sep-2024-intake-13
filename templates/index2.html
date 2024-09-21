@@ -1,0 +1,38 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Financial Wealth Management Portal</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Financial Wealth Management Portal</h2>
+        <p>Welcome to the Financial Wealth Management Portal. Please fill in the details below to receive a DBS price prediction.</p>
+        
+        <form action="/prediction_DBS" method="post">
+            <div class="form-group">
+                <label for="amount">Investment Amount:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+            </div>
+
+            <div class="form-group">
+                <label for="duration">Investment Duration (years):</label>
+                <input type="number" id="duration" name="duration" placeholder="Enter duration" required>
+            </div>
+
+            <div class="form-group">
+                <label for="risk">Risk Level:</label>
+                <select id="risk" name="risk" required>
+                    <option value="" disabled selected>Select risk level</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Predict DBS Price" class="submit-button">
+        </form>
+        
+        <p>If you need assistance, <a href="/help">click here for support.</a></p>
+    </div> 
+</body>
