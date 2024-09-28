@@ -3,9 +3,8 @@ import google.generativeai as genai
 import os
 
 model = genai.GenerativeModel("gemini-1.5-flash")
-
 api = os.getenv("MAKERSUITE")
-genai.configure(api_key=api) # Hide the API
+genai.configure(api_key=api)
 
 app = Flask(__name__)
 
