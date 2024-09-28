@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wealth Guardian Behavior FAQ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white; /* White background */
+            color: #003366; /* Dark blue font color */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px; /* Slightly wider container */
+            margin: 0 auto;
+            padding: 40px; /* Increased padding for more breathing space */
+            background-color: #f9f9f9; /* Light gray background for contrast */
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8em; /* Larger title */
+            margin-bottom: 30px; /* Increased margin */
+            color: #003366; /* Dark blue font color */
+        }
+
+        h2, h3, h4 {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #003366; /* Dark blue font color for headings */
+        }
+
+        h3 {
+            margin-top: 25px; /* Increased margin for headings */
+            margin-bottom: 10px;
+            font-size: 1.5em; /* Slightly larger subheading */
+            cursor: pointer; /* Cursor to indicate clickable */
+            transition: color 0.3s; /* Smooth transition for hover */
+        }
+
+        h3:hover {
+            color: #4aaf4a; /* Change color on hover */
+        }
+
+        p {
+            font-size: 1.1em; /* Standard font size for text */
+            padding: 10px;
+            text-align: justify;
+            margin-bottom: 25px; /* Increased margin for better spacing */
+            background-color: #ffffff; /* White background for paragraphs */
+            border-radius: 8px; /* Rounded corners for paragraph background */
+            padding: 15px; /* Padding for better readability */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+        }
+
+        .faq-item {
+            margin-bottom: 30px; /* Increased spacing between FAQ items */
+        }
+
+        /* Style for the portfolio diversification text */
+        .diversification-text {
+            font-size: 1.5em; /* Slightly larger font */
+            margin: 30px 0; /* Add margin for spacing */
+            color: #003366; /* Dark blue color */
+            text-align: center; /* Centered text */
+            font-weight: bold; /* Bold text for emphasis */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 14px; /* Increased padding for better touch target */
+            border: 1px solid #ccc; /* Standard border */
+            border-radius: 5px; /* Rounded edges */
+            margin-bottom: 15px; /* Spacing below input */
+            font-size: 1em; /* Standard font size for inputs */
+            transition: border-color 0.3s; /* Smooth transition for border */
+        }
+
+        input[type="text"]:focus {
+            border-color: #4aaf4a; /* Highlight border on focus */
+            outline: none; /* Remove default outline */
+        }
+
+        input[type="submit"] {
+            background-color: #4aaf4a; /* Button color */
+            color: white; /* White text */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded edges */
+            padding: 12px; /* Padding for button */
+            cursor: pointer; /* Pointer cursor for button */
+            font-size: 1.1em; /* Slightly larger button text */
+            transition: background-color 0.3s; /* Smooth transition */
+            width: 100%; /* Full width for the submit button */
+            margin-top: 10px; /* Spacing above button */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #66b3a4; /* Change background on hover */
+        }
+
+        footer {
+            text-align: center; /* Center text */
+            margin-top: 50px; /* Increased margin */
+            font-size: 0.9em; /* Standard footer font size */
+            color: #888; /* Gray color */
+            padding: 20px; /* Added padding */
+            border-top: 1px solid #ccc; /* Separator line */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px; /* Adjust padding for smaller screens */
+            }
+            h1 {
+                font-size: 2em; /* Smaller title on mobile */
+            }
+            input[type="text"], input[type="submit"] {
+                font-size: 0.9em; /* Adjust input/button size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Behavior of a Wealth Guardian</h1>
+
+        <div class="faq-item">
+            <h3>What qualities should a wealth guardian possess?</h3>
+            <p>A good wealth guardian should have strong analytical skills, integrity, empathy, and excellent communication abilities. They should understand your financial goals and act in your best interest. It's essential that they align their strategies with the client's needs and remain transparent about their actions. Maintaining a proactive approach to market changes is a hallmark of a reliable wealth guardian.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="diversification-text">How should I diversify my investment portfolio?</div>
+        </div>
+
+        <!-- Form to submit a question -->
+        <form action="/q2" method="post">
+            <h4>Please enter your question:</h4>
+            <p><input type="text" name="q" placeholder="Type your question here..."></p>
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </div>
+
+    <footer>
+        © 2024 Wealth Guardian FAQ. All rights reserved. | Your financial future is in good hands!
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
