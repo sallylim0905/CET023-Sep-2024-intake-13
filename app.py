@@ -5,6 +5,7 @@ import numpy as np
 
 model = genai.GenerativeModel("gemini-1.5-flash")
 api = os.getenv("MAKERSUITE")
+#api = "AIzaSyACt0nzRMrjE2ac-YFS3Qutw395rgMfy5Q"
 genai.configure(api_key=api)
 
 app = Flask(__name__)
@@ -46,7 +47,7 @@ def predict_creditability():
 def prediction_result_creditability():
     q = float(request.form.get("q"))
     r = (-0.0001207 * q) + 0.33595796
-    np.where(r >= 0.5,"Creditable" , "Not Creditable") 
+    r = np.where(r >= 0.5,"Creditable", "Not Creditable") 
     return render_template("prediction_result_creditability.html", r=r)
 
 if __name__ == "__main__":
