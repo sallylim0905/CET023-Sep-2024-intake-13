@@ -1,0 +1,8 @@
+The CET023-Sep-2024-intake-13 project focuses on building an AI-powered solution to demonstrate the practical use of Generative AI. It aims to improve customer service
+by utilizing advanced AI models integrated with Firebase for seamless data handling.
+
+## **Features**  
+- **Generative AI Chatbot:** Real-time responses powered by OpenAI’s GPT models.  
+- **Firebase Integration:** For efficient data storage, retrieval, and authentication.  
+- **Multi-Turn Conversations:** Implemented through LangChain for smooth interaction flow.  
+- **Scalable Cloud Deployment:** Supports deployment on Firebase or Google Cloud.  
