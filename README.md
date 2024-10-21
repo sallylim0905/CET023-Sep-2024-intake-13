@@ -12,7 +12,7 @@ The **CET023-Sep-2024-intake-13** project focuses on building an AI-powered solu
 ---
 
 ## **Technologies Used**  
-- **Programming Languages:** Python, JavaScript  
+- **Programming Languages:** Python, HTML
 - **Libraries / Frameworks:**  
   - OpenAI API (for GPT-based models)  
   - LangChain (for multi-step workflows)  
