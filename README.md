@@ -1,5 +1,5 @@
 ## **Overview**  
-The **CET023-Sep-2024-intake-13** project focuses on building an AI-powered solution to demonstrate the practical use of **Generative AI**. It aims to solve [specify the problem—e.g., improve customer service, automate tasks, or generate content] by utilizing advanced **AI models** integrated with Firebase for seamless data handling.
+The **CET023-Sep-2024-intake-13** project focuses on building an AI-powered solution to demonstrate the practical use of **Generative AI**. It aims to improve customer service by utilizing advanced **AI models** integrated with Firebase for seamless data handling.
 
 ---
 
